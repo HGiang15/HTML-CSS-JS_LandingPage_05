@@ -6,7 +6,7 @@
     --primary-color: #7264D6;
     --white-color: #fff;
     --black-color: #000;
-    /* --background-color: #FFFAF5 */
+    --text-color: #696D76;
 }
 
 html {
@@ -68,29 +68,42 @@ button {
 .btn:hover {
     scale: 1.1;
     background-color: var(--primary-color);
+    cursor: pointer;
 }
 
 .section-heading {
+    font-size: 4rem;
     font-weight: 700;
-    font-size: 5.2rem;
-    line-height: 1.19;
-    color: #000958;
+    line-height: 1.25;
+    color: #212832;
 }
 
-.section-desc {
-    margin-top: 24px;
+.section-desc-1 {
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: var(--text-color);
+}
+
+.section-desc-2 {
     font-size: 1.6rem;
-    line-height: 1.88;
-    color: #656689;
+    line-height: 1.75;
+    color: var(--text-color);
 }
 
 .section-label {
-    font-family: Sora, sans-serif;
-    font-weight: 600;
+    display: flex;
+    align-items: center;
     font-size: 1.6rem;
-    line-height: 1;
-    color: #5E6085;
-    margin-bottom: 15px;
+    line-height: 1.75;
+    color: #696D77;
+}
+
+.section-label::before {
+    content: "";
+    margin-right: 12px;
+    width: 18px;
+    height: 2px;
+    background: #696D77;
 }
 
 /* ============== Header ============== */
@@ -118,7 +131,7 @@ button {
 .navbar__link {
     position: relative;
     padding: 10px 24px;
-    color: #696D76;
+    color: var(--text-color);
 }
 
 .navbar__link:hover::after,
@@ -163,4 +176,161 @@ button {
 .header-action__btn {
     --height: 52px;
     min-width: 113px;
+}
+
+/* ============== Hero ============== */
+.hero {
+    margin-top: 76px;
+}
+
+.hero_inner {
+    display: flex;
+    align-items: center;
+}
+
+.hero_content {
+    width: 46.5%;
+}
+
+.hero-heading {
+    margin: 12px 0;
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.17;
+    color: #212832;
+}
+
+.hero-heading strong {
+    color: #7264D6;
+}
+
+.hero-form {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    padding: 8px 8px 8px 0;
+    border-radius: 8px;
+    background: var(--white-color);
+    box-shadow: 0px 16px 42px 0px rgba(0, 0, 0, 0.07);
+}
+
+.hero-form_input {
+    width: 100%;
+    padding: 23px;
+    border: none;
+    outline: none;
+    border-radius: inherit;
+}
+
+.hero-form_btn {
+    margin-right: 8px;
+    outline: none;
+    border: none;
+    background: var(--primary-color);
+}
+
+.hero_message {
+    margin-top: 20px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.71;
+    color: #696D76;
+    /* visibility: hidden; */
+}
+
+/* 
+.hero_content:has(:invalid:not(:placeholder-shown)) .hero_message {
+    visibility: visible;
+} */
+
+.hero_media {
+    margin-left: 160px;
+    flex-grow: 1;
+}
+
+.hero_image {
+    position: relative;
+}
+
+.hero_deposit {
+    position: absolute;
+    top: 113px;
+    left: -100px;
+    display: flex;
+    align-items: center;
+    padding: 14px 10px;
+    border-radius: 6px;
+    background: var(--white-color);
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.07);
+}
+
+.hero_deposit-icon {
+    width: 18px;
+    height: 18px;
+}
+
+.hero_deposit-text {
+    margin-left: 8px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+    color: #31456A;
+}
+
+.hero_deposit-amount {
+    margin-left: 8px;
+    color: #4AB5E3;
+    font-size: 1.4rem;
+    line-height: 1;
+}
+
+.hero_interest {
+    position: absolute;
+    top: 127px;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: #DA6464;
+}
+
+.hero_interest-percent {
+    color: var(--white-color);
+    font-size: 4.4rem;
+    font-weight: 600;
+}
+
+.hero_interest-text {
+    color: var(--white-color);
+    font-size: 1.6rem;
+}
+
+.hero_secured {
+    position: absolute;
+    bottom: 61px;
+    right: 100px;
+    display: flex;
+    align-items: center;
+    column-gap: 11px;
+    padding: 20px 14px;
+    border-radius: 10px;
+    background: #439F90;
+}
+
+.hero_secured-number {
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+    color: var(--white-color);
+}
+
+.hero_secured-text {
+    margin-top: 5px;
+    font-size: 0.8rem;
+    line-height: 1;
+    color: var(--white-color);
 }
