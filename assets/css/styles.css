@@ -7,7 +7,7 @@
     --white-color: #fff;
     --black-color: #000;
     --text-color: #696D76;
-    --label--color-2: var(--label--color-2);
+    --label--color-2: #212832;
 }
 
 html {
@@ -100,10 +100,22 @@ button {
 }
 
 .section-label-2 {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
     color: var(--label--color-2);
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 1.67;
+}
+
+.section-label-2::before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--primary-color);
 }
 
 .section-label::before {
@@ -470,4 +482,138 @@ button {
     font-weight: 600;
     line-height: 1.45;
     color: #212832;
+}
+
+/* ============== Card ============== */
+.card {
+    margin-top: 160px;
+}
+
+.card__inner {
+    display: flex;
+    align-items: center;
+}
+
+.card__content {
+    width: 40.17%;
+}
+
+.card__heading {
+    margin: 12px 0 20px;
+}
+
+.card__content-info {
+    margin-top: 28px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-item:nth-child(2),
+.cart-item:nth-child(3) {
+    margin-top: 18px;
+}
+
+.card__btn {
+    margin-top: 38px;
+}
+
+.card__media {
+    width: 48.7%;
+    margin-left: auto;
+}
+
+.card_img-wrap {
+    position: relative;
+}
+
+.card__payment {
+    position: absolute;
+    top: -48px;
+    right: 0;
+    display: flex;
+    align-items: center;
+    padding: 23px 13px;
+    border-radius: 12px;
+    background: var(--white-color);
+    box-shadow: 0px 14px 38px 0px rgba(0, 0, 0, 0.07);
+}
+
+.card__payment-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background: rgb(218 100 100 / 10%);
+    box-shadow: -4px -2px 16px 0px #fff, 4px 2px 16px 0px rgba(136, 165, 191, 0.48);
+}
+
+.card__payment-info {
+    margin-left: 14px;
+}
+
+.card__payment-label {
+    font-family: Inter, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #212832;
+}
+
+.card__payment-type {
+    margin-top: 8px;
+    font-family: Inter, sans-serif;
+    font-size: 1rem;
+    color: #696D76;
+}
+
+.card__payment-detail {
+    margin-left: 67px;
+    text-align: right;
+    font-family: Inter, sans-serif;
+}
+
+.card__payment-detail-amount {
+    font-size: 1.6rem;
+    color: #212832;
+}
+
+.card__payment-detail-time {
+    margin-top: 6px;
+    font-size: 1rem;
+    color: #696D76;
+}
+
+.card__income {
+    position: absolute;
+    right: 0;
+    bottom: -55px;
+    width: 120px;
+    height: 120px;
+    padding: 15px;
+    border-radius: 16px;
+    background: #439F90;
+}
+
+.card__income-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    background: var(--white-color);
+}
+
+.card__income-label {
+    margin-top: 14px;
+    font-size: 1.2rem;
+    color: var(--white-color);
+}
+
+.card__income-amount {
+    margin-top: 6px;
+    color: var(--white-color);
+    font-size: 1.8rem;
+    font-weight: 600;
 }
