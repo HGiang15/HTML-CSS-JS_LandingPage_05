@@ -481,7 +481,7 @@ button {
     font-size: 2.2rem;
     font-weight: 600;
     line-height: 1.45;
-    color: #212832;
+    color: var(--label--color-2);
 }
 
 /* ============== Card ============== */
@@ -508,8 +508,8 @@ button {
     flex-direction: column;
 }
 
-.cart-item:nth-child(2),
-.cart-item:nth-child(3) {
+.card-item:nth-child(2),
+.card-item:nth-child(3) {
     margin-top: 18px;
 }
 
@@ -557,7 +557,7 @@ button {
     font-family: Inter, sans-serif;
     font-size: 1.2rem;
     font-weight: 500;
-    color: #212832;
+    color: var(--label--color-2);
 }
 
 .card__payment-type {
@@ -575,7 +575,7 @@ button {
 
 .card__payment-detail-amount {
     font-size: 1.6rem;
-    color: #212832;
+    color: var(--label--color-2);
 }
 
 .card__payment-detail-time {
@@ -616,4 +616,120 @@ button {
     color: var(--white-color);
     font-size: 1.8rem;
     font-weight: 600;
+}
+
+/* ============== Transfer ============== */
+.transfer {
+    margin-top: 160px;
+}
+
+.transfer__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.transfer__media {
+    width: 40.17%;
+}
+
+.transfer__img-wrap {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.transfer__img-wrap::before {
+    content: url(../img/transfer-background.svg);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    margin-bottom: -3px;
+}
+
+.transfer-img {
+    display: block;
+    width: 87.87%;
+    object-fit: cover;
+}
+
+.transfer__method {
+    position: absolute;
+    right: -74px;
+    bottom: 57px;
+    /* width: 281px;
+    height: 220px; */
+    padding: 28px;
+    background: var(--white-color);
+    border-radius: 4px;
+    box-shadow: 0 44px 48px 0 rgba(0, 0, 0, 0.1);
+}
+
+.transfer__title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+    color: var(--label--color-2);
+}
+
+.transfer__list {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.transfer__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 63px;
+    height: 48px;
+    border-radius: 4px;
+    background: #f2f2fa;
+}
+
+.transfer__btn-link {
+    outline: none;
+    border: none;
+    background: #f9ea63;
+    cursor: pointer;
+}
+
+.transfer__money {
+    position: absolute;
+    right: -100px;
+    bottom: 244px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: var(--primary-color);
+}
+
+.transfer__content {
+    width: 40.17%;
+}
+
+.transfer__heading {
+    margin: 12px 0 20px;
+}
+
+.transfer__content-info {
+    margin-top: 28px;
+    display: flex;
+    flex-direction: column;
+}
+
+.transfer-item:nth-child(2),
+.transfer-item:nth-child(3) {
+    margin-top: 18px;
+}
+
+.transfer__btn {
+    margin-top: 38px;
 }
