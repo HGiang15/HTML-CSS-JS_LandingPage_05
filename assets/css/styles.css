@@ -733,3 +733,127 @@ button {
 .transfer__btn {
     margin-top: 38px;
 }
+
+/* ============== Feedback ============== */
+.feedback {
+    margin-top: 160px;
+}
+
+.feedback__top {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.feedback__heading {
+    margin: 12px 0 18px;
+}
+
+.feedback__desc {
+    width: 435px;
+}
+
+.feedback__list {
+    display: flex;
+    column-gap: 30px;
+    margin-top: 70px;
+    overflow: hidden;
+}
+
+.feedback-item {
+    flex-shrink: 0;
+    width: 48.7%;
+}
+
+.feedback-item__desc {
+    position: relative;
+    padding: 42px 28px;
+    border: 1px solid #dfe2e8;
+    border-radius: 4px;
+    background: var(--white-color);
+    color: #696D76;
+    text-align: center;
+    font-size: 2.2rem;
+    font-style: italic;
+    line-height: 1.55;
+    filter: drop-shadow(0 0 3px #DFE2E8)
+}
+
+.feedback-item__desc::after {
+    content: "";
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: -80px;
+    border: 40px solid;
+    border-color: var(--white-color) transparent transparent transparent;
+}
+
+.feedback-item__desc:hover {
+    border-color: var(--white-color);
+    filter: drop-shadow(0px 22px 54px rgba(0, 0, 0, 0.07));
+}
+
+.feedback__user {
+    margin-top: 76px;
+    text-align: center;
+}
+
+.feedback__user-avatar {
+    display: inline-flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 104px;
+    height: 104px;
+    border-radius: 100%;
+}
+
+.feedback-item:nth-child(odd) .feedback__user-avatar {
+    background: #4AB5E3;
+}
+
+.feedback-item:nth-child(even) .feedback__user-avatar {
+    background: #439F90;
+}
+
+.feedback-avatar {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+.feedback__user-name {
+    margin-top: 20px;
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 1.38;
+    color: #070052;
+}
+
+.feedback__user-job {
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #696D76;
+}
+
+.feedback-cta {
+    margin-top: 38px;
+    display: flex;
+    justify-content: center;
+    column-gap: 12px;
+}
+
+.feedback-cta__item {
+    width: 22px;
+    height: 6px;
+    border: 1px solid #9B9FAB;
+    border-radius: 1px;
+    cursor: pointer;
+}
+
+.feedback-cta__item--active {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+}
