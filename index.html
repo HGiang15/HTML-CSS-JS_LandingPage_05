@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HGTV</title>
+    <title>Project 05</title>
 
     <!-- Reset CSS -->
     <link rel="stylesheet" href="./assets/css/reset.css">
@@ -34,6 +34,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
+
+    <!-- Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- Styles CSS -->
     <link rel="stylesheet" href="./assets/css/styles.css">
@@ -98,7 +101,7 @@
                     <figure class="hero_image">
                         <img src="./assets/img/hero-img.svg" alt="" class="hero-img">
 
-                        <div class="hero_deposit">
+                        <div class="hero_deposit" data-aos="fade-right">
                             <a href="#!">
                                 <img src="./assets/icons/hero-download.svg" alt="" class="hero_deposit-icon">
                             </a>
@@ -106,7 +109,7 @@
                             <strong class="hero_deposit-amount">$32000</strong>
                         </div>
 
-                        <div class="hero_interest">
+                        <div class="hero_interest" data-aos="fade-left">
                             <strong class="hero_interest-percent">0%</strong>
                             <p class="hero_interest-text">Interest</p>
                         </div>
@@ -124,9 +127,9 @@
         </div>
     </section>
 
-    <main style="height: 5000px;">
+    <main>
         <!-- Work -->
-        <section class="work">
+        <section id="products" class="work">
             <div class="container">
                 <div class="work__inner">
                     <div class="work__media">
@@ -193,7 +196,7 @@
         </section>
 
         <!-- Card -->
-        <section class="card">
+        <section id="features" class="card">
             <div class="container">
                 <div class="card__inner">
                     <div class="card__content">
@@ -318,7 +321,7 @@
 
                 <div class="feedback__list">
                     <!-- Feedback item 1 -->
-                    <div class="feedback-item">
+                    <div class="feedback-item" data-aos="zoom-in-down">
                         <p class="feedback-item__desc">
                             Fantastic platform for online banking. The best online banking platform I have used.
                             Payments, loans, and money transfers have never been so much easier before. I am very
@@ -335,7 +338,7 @@
                     </div>
 
                     <!-- Feedback item 2 -->
-                    <div class="feedback-item">
+                    <div class="feedback-item" data-aos="zoom-in-down">
                         <p class="feedback-item__desc">
                             Fantastic platform for online banking. The best online banking platform I have used.
                             Payments, loans, and money transfers have never been so much easier before. I am very much
@@ -407,11 +410,194 @@
             </div>
         </section>
 
+        <!-- Blog -->
+        <section id="blog" class="blog">
+            <div class="container">
+                <div class="blog__top">
+                    <div class="blog-info">
+                        <p class="section-label">Our Blog</p>
+                        <h2 class="blog__heading section-heading">Get The Updates</h2>
+                        <p class="section-desc-2">
+                            Read our blog for the regular updates about us and about our online
+                            banking services that may inspire you
+                        </p>
+                    </div>
 
+                    <a href="#!" class="btn blog-btn">Read All</a>
+                </div>
+
+                <div class="blog__list">
+                    <!-- Blog item 1 -->
+                    <div class="blog-item">
+                        <a href="#!" class="blog-item__img">
+                            <img src="./assets/img/blog-01.jpg" alt="" class="blog-img">
+                        </a>
+
+                        <div class="blog-item__info">
+                            <p class="blog__date">July 03, 2022</p>
+                            <a href="#!">
+                                <p class="blog_desc">Online bank is the best and secure way to save in the future...</p>
+                            </a>
+                            <a href="#!" class="blog__cta">Read Blog</a>
+                        </div>
+                    </div>
+
+                    <!-- Blog item 2 -->
+                    <div class="blog-item">
+                        <a href="#!" class="blog-item__img">
+                            <img src="./assets/img/blog-02.jpg" alt="" class="blog-img">
+                        </a>
+
+                        <div class="blog-item__info">
+                            <p class="blog__date">July 03, 2022</p>
+                            <a href="#!">
+                                <p class="blog_desc">Why do you need to open a bank account in online..</p>
+                            </a>
+                            <a href="#!" class="blog__cta">Read Blog</a>
+                        </div>
+                    </div>
+
+                    <!-- Blog item 3 -->
+                    <div class="blog-item">
+                        <a href="#!" class="blog-item__img">
+                            <img src="./assets/img/blog-03.jpg" alt="" class="blog-img">
+                        </a>
+
+                        <div class="blog-item__info">
+                            <p class="blog__date">July 03, 2022</p>
+                            <a href="#!">
+                                <p class="blog_desc">The benefits that we get from credit card at anytime...</p>
+                            </a>
+                            <a href="#!" class="blog__cta">Read Blog</a>
+                        </div>
+                    </div>
+
+                    <!-- Blog item 4 -->
+                    <div class="blog-item">
+                        <a href="#!" class="blog-item__img">
+                            <img src="./assets/img/blog-04.jpg" alt="" class="blog-img">
+                        </a>
+
+                        <div class="blog-item__info">
+                            <p class="blog__date">July 03, 2022</p>
+                            <a href="#!">
+                                <p class="blog_desc">How to manage your money in online in this busy days...</p>
+                            </a>
+                            <a href="#!" class="blog__cta">Read Blog</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- App -->
+        <section class="app">
+            <div class="container">
+                <div class="app__inner">
+                    <p class="app__label section-label">Our App</p>
+                    <h2 class="app__heading section-heading">Download the Apps</h2>
+                    <p class="app__desc section-desc-2">
+                        Download our mobile apps and get started today with a special online bank
+                        and move faster
+                    </p>
+                    <div class="app__download">
+                        <a href="#!"><img src="./assets/img/appstore.svg" alt=""></a>
+                        <a href="#!"><img src="./assets/img/ggplay.svg" alt=""></a>
+                    </div>
+                    <img src="./assets/img/star.svg" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000" data-aos-offset="200" alt="" class="app-decor">
+                    <img src="./assets/img/star.svg" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000" data-aos-offset="200" alt="" class="app-decor">
+                    <img src="./assets/img/star.svg" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000" data-aos-offset="200" alt="" class="app-decor">
+                    <img src="./assets/img/star.svg" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000" data-aos-offset="200" alt="" class="app-decor">
+                </div>
+            </div>
+        </section>
     </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__row">
+                <a href="#!"><img src="./assets/img/logo.svg" alt=""></a>
+
+                <!-- Column 1 -->
+                <div class="footer__column">
+                    <h3 class="footer__heading">Sitemap</h3>
+                    <ul class="footer__list">
+                        <li class="footer_item">
+                            <a href="#!" class="footer__link">Home</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="#!" class="footer__link">Abouts</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="#!" class="footer__link">Growers</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="#!" class="footer__link">Merchants</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="#!" class="footer__link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="footer__column">
+                    <h3 class="footer__heading">Socials</h3>
+                    <ul class="footer__list">
+                        <li class="footer_item">
+                            <a href="#!" class="footer__link">Facebook</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="#!" class="footer__link">Linkedin</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="#!" class="footer__link">Instagram</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="#!" class="footer__link">Twitter</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Column 3 -->
+                <div class="footer__column">
+                    <h3 class="footer__heading">Head Office</h3>
+                    <ul class="footer__list">
+                        <p class="footer__link footer__desc">
+                            Xilliams Corner Wine © 2017. 1112 A Market St # Ste B22,
+                            Charlottesville, CA 45565
+                        </p>
+                        <h3 class="footer__heading footer__heading--bottom">News letter</h3>
+                        <form action="" class="footer__form">
+                            <input type="email" name="email" class="footer__input" id="email"
+                                placeholder="Email address...">
+                            <button class="btn footer__submit">Subscribe</button>
+                        </form>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="footer__contact">
+                <a href="mailto:gianghoang@gmail.com" class="footer__email">gianghoang@gmail.com</a>
+                <a href="tel:+0398162588" class="footer__phone">0398162588</a>
+            </div>
+
+        </div>
+        <p class="footer__copyright">© 2023 Ligft Media All rights reserved.</p>
+    </footer>
 
 
     <!-- JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="./assets/js/main.js"></script>
 </body>
 
