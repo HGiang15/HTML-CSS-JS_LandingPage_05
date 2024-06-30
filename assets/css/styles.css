@@ -128,7 +128,11 @@ button {
 
 /* ============== Header ============== */
 .header {
-    padding: 26px 0;
+    position: sticky;
+    top: -30px;
+    padding: 42px 0 12px;
+    background: var(--white-color);
+    z-index: 2;
 }
 
 .header.fixed {
