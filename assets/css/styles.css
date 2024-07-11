@@ -72,6 +72,21 @@ button {
     cursor: pointer;
 }
 
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp.line-2 {
+    --line-clamp: 2;
+}
+
+.line-clamp.line-3 {
+    --line-clamp: 3;
+}
+
 .section-heading {
     font-size: 4rem;
     font-weight: 700;
@@ -132,12 +147,6 @@ button {
     top: -30px;
     padding: 42px 0 12px;
     background: var(--white-color);
-    z-index: 2;
-}
-
-.header.fixed {
-    position: sticky;
-    top: 0;
     z-index: 2;
 }
 
@@ -426,7 +435,7 @@ button {
     border-radius: 8px;
     background: #FFFDFA;
     box-shadow: 0px 14px 34px 0px rgba(0, 0, 0, 0.07);
-    z-index: 2;
+    z-index: 1;
 }
 
 .work__card-background {

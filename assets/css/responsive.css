@@ -1,0 +1,611 @@
+/* PC */
+@media screen and (min-width: 992px) {
+    .mobile-header {
+        display: none;
+    }
+
+    .show-on-mobile {
+        display: none;
+    }
+
+    .toggle-menu svg {
+        display: none;
+    }
+
+    .bell {
+        display: none;
+    }
+}
+
+/* Tablet & Mobile */
+@media screen and (max-width: 991.98px) {
+
+    /* Heading */
+    .section-heading {
+        font-size: 3.6rem;
+    }
+
+    .section-desc-1 {
+        font-size: 1.6rem;
+    }
+
+    .section-desc-2 {
+        font-size: 1.4rem;
+    }
+
+    /* Common */
+    .hero_content,
+    .card__content,
+    .work__content,
+    .transfer__content {
+        width: 100%;
+    }
+
+    /* -- Header -- */
+    .navbar {
+        position: relative;
+    }
+
+    .logo {
+        position: absolute;
+        top: 40%;
+        left: 48%;
+        transform: translate(-50%, 50%);
+    }
+
+    .navbar__list {
+        display: none;
+    }
+
+    .toggle-menu svg {
+        display: block;
+        width: 24px;
+        color: #666;
+    }
+
+    .menu-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 2;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.6s ease;
+    }
+
+    .menu-drawer {
+        position: fixed;
+        inset: 0 40% 0 0;
+        background: #fff;
+        z-index: 2;
+        padding: 60px;
+        transform: translateX(-100%);
+        transition: 0.6s ease;
+    }
+
+    .menu-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .menu-drawer .x-mark svg {
+        width: 20px;
+    }
+
+    .menu-drawer ul {
+        margin-top: 32px;
+    }
+
+    .menu-drawer ul a {
+        display: block;
+        padding: 20px 0;
+        font-weight: 500;
+        color: #333;
+    }
+
+    .menu-checkbox:checked~.menu-overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .menu-checkbox:checked~.menu-drawer {
+        transform: translateX(0);
+    }
+
+    .separate {
+        border-top: 1.5px solid #ebebeb;
+    }
+
+    .navbar__link--active::after,
+    .navbar__link:hover::after {
+        display: none;
+    }
+
+    .navbar__link:hover {
+        color: #212832;
+        text-shadow: 0.5px 0 0 currentColor;
+        line-height: normal;
+    }
+
+    /* Hero */
+    .hero__inner {
+        flex-direction: column;
+    }
+
+    .hero-heading {
+        font-size: 5.2rem;
+    }
+
+    .hero-form {
+        margin-top: 20px;
+    }
+
+    .hero_media {
+        margin: 30px 0 0;
+    }
+
+    .hero_deposit {
+        left: -120px;
+    }
+
+    .hero_interest {
+        right: -90px;
+    }
+
+    .hero_secured {
+        bottom: -30px;
+        right: 80px;
+    }
+
+    /* Work */
+    .work__inner {
+        flex-direction: column-reverse;
+    }
+
+    .work-list {
+        margin-top: 35px;
+    }
+
+    .work__heading {
+        font-size: 2rem;
+    }
+
+    .work__media {
+        margin-top: 100px;
+        width: 100%;
+    }
+
+    .work__img-wrap {
+        display: flex;
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .work__logo-background {
+        top: 100px;
+        right: -45px;
+    }
+
+    /* Card */
+    .card {
+        margin-top: 120px;
+    }
+
+    .card__inner {
+        flex-direction: column;
+    }
+
+    .card__media {
+        width: 100%;
+        margin: 80px 0 0;
+    }
+
+    .card_img-wrap {
+        display: flex;
+    }
+
+    .card_img-wrap img {
+        margin: 0 auto;
+    }
+
+    .card__payment {
+        top: -50px;
+        right: 66px;
+    }
+
+    .card__income {
+        right: 40px;
+        bottom: -30px;
+    }
+
+    /* Transfer */
+    .transfer__inner {
+        flex-direction: column-reverse;
+    }
+
+    .transfer__media {
+        margin-top: 86px;
+        width: 100%;
+    }
+
+    .transfer__img-wrap {
+        display: flex;
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .transfer-img {
+        width: 80%;
+    }
+
+    .transfer__method {
+        right: -100px;
+        bottom: 10px;
+    }
+
+    .transfer__money {
+        top: 100px;
+        right: -90px;
+    }
+
+    /* Feedback */
+    .feedback-item {
+        flex-shrink: 0;
+        width: 100%;
+    }
+
+    .feedback__user-name {
+        font-size: 2.4rem;
+    }
+
+    .feedback__user-job {
+        font-size: 1.6rem;
+    }
+
+    /* Blog */
+    .blog-info {
+        width: 100%;
+    }
+
+    .blog-info__desc {
+        width: 80%;
+    }
+
+    .blog-item {
+        flex-direction: column;
+    }
+
+    .blog-item__img {
+        width: 100%;
+    }
+
+    .blog-item__info {
+        margin-top: 20px;
+    }
+
+    .blog_desc {
+        font-size: 1.6rem;
+    }
+
+    /* App */
+    .app {
+        margin-top: 110px;
+    }
+
+    .app__inner {
+        padding: 70px 0;
+    }
+
+    .app__desc {
+        width: 50%;
+    }
+
+    .app-decor {
+        width: 130px;
+    }
+
+    .app-decor:nth-of-type(1) {
+        left: 25px;
+    }
+
+    .app-decor:nth-of-type(2) {
+        right: 25px;
+    }
+
+    .app-decor:nth-of-type(3) {
+        left: 50px;
+        bottom: 30px;
+        width: 100px;
+    }
+
+    .app-decor:nth-of-type(4) {
+        width: 100px;
+        right: 50px;
+        bottom: 30px;
+    }
+
+    .app__download-img {
+        width: 130px;
+    }
+
+    /* Footer */
+    .footer__contact {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .footer__row {
+        flex-wrap: wrap;
+    }
+
+    .footer__phone {
+        margin-left: 0;
+    }
+
+    .footer__row .footer__column:nth-of-type(3) {
+        margin-top: 40px;
+    }
+
+    .footer__heading--bottom {
+        margin-top: 30px;
+    }
+
+    .footer__desc,
+    .footer__form,
+    .footer__input {
+        width: 100%;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+    .show-on-mobile {
+        display: none;
+    }
+
+    .bell-wrap {
+        display: none;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 767.98px) {
+
+    /* Heading */
+    .section-heading {
+        font-size: 3.4rem;
+    }
+
+    .section-desc-1,
+    .section-label {
+        font-size: 1.4rem;
+    }
+
+
+    /* Common */
+    .hide-on-mobile {
+        display: none;
+    }
+
+    /* -- Header -- */
+    .menu-drawer {
+        inset: 0 25% 0 0;
+        padding: 40px;
+    }
+
+    .logo {
+        left: 50%;
+        width: 110px;
+        top: 50%;
+        transform: translate(-50%);
+    }
+
+    .header-action {
+        display: none;
+    }
+
+    .header__inner {
+        justify-content: space-between;
+    }
+
+    .bell {
+        display: block;
+        width: 20px;
+    }
+
+    /* Hero */
+    .hero-heading {
+        font-size: 3.6rem;
+    }
+
+    .hero-form {
+        padding: 0;
+    }
+
+    .hero-form_btn {
+        --height: 50px;
+        font-size: 1.4rem;
+        min-width: 120px;
+    }
+
+    .hero-form_input::placeholder {
+        font-size: 1.4rem;
+    }
+
+    .hero_image {
+        display: flex;
+    }
+
+    .hero-img {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .hero_deposit {
+        left: -30px;
+    }
+
+    .hero_interest {
+        right: -30px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .hero_interest-percent {
+        font-size: 3.6rem;
+    }
+
+    .hero_interest-text {
+        font-size: 1.4rem;
+        margin-top: 3px;
+    }
+
+    .hero_secured {
+        bottom: -50px;
+    }
+
+    /* Work */
+    .work__heading {
+        font-size: 1.8rem;
+    }
+
+    .work__media {
+        margin-top: 100px;
+    }
+
+    .work__img-wrap::before {
+        display: none;
+    }
+
+    .work__img-wrap {
+        width: 80%;
+    }
+
+    .work__logo-background {
+        top: 40px;
+    }
+
+    .work__card-wrap {
+        bottom: 35px;
+        right: -55px;
+    }
+
+    /* Card */
+    .card_img-wrap img {
+        width: 100%;
+    }
+
+    .card__payment {
+        padding: 18px 20px;
+    }
+
+    .card__payment-img {
+        background: none;
+        box-shadow: none;
+    }
+
+    .card__payment-info {
+        width: 100%;
+    }
+
+    .card__payment-detail {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .card__income {
+        right: 0;
+        bottom: -40px;
+    }
+
+    /* Transfer */
+    .transfer__img-wrap::before {
+        display: none;
+    }
+
+    .transfer__img-wrap {
+        width: 86%;
+    }
+
+    .transfer-img {
+        width: 100%;
+    }
+
+    .transfer__method {
+        padding: 20px;
+        right: -25px;
+        bottom: -75px;
+    }
+
+    .transfer__money {
+        left: 0;
+        top: 18px;
+    }
+
+    /* Feedback */
+    .feedback__desc {
+        width: 100%;
+    }
+
+    .feedback-item__desc {
+        font-size: 2rem;
+    }
+
+    /* Blog */
+    .blog__top {
+        flex-direction: column;
+    }
+
+    .blog-btn {
+        margin-top: 20px;
+        align-self: flex-start;
+    }
+
+    .blog__list {
+        grid-template-columns: 1fr;
+    }
+
+    /* App */
+    .app__heading {
+        font-size: 3rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    .app__desc {
+        width: 80%;
+    }
+
+    .app-decor,
+    .app-decor:nth-of-type(3),
+    .app-decor:nth-of-type(4) {
+        width: 60px;
+    }
+
+    .app-decor:nth-of-type(1),
+    .app-decor:nth-of-type(2) {
+        top: 30px;
+    }
+
+    .app-decor:nth-of-type(3),
+    .app-decor:nth-of-type(4) {
+        bottom: 6px;
+    }
+
+    /* Footer */
+    .footer {
+        margin-top: 40px;
+    }
+
+    .footer__row {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .footer__row .footer__column:nth-of-type(3) {
+        margin-top: 0;
+    }
+}

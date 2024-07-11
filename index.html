@@ -40,18 +40,29 @@
 
     <!-- Styles CSS -->
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 
 <body>
+    <!-- PC Header -->
     <header class="header">
         <div class="container">
             <div class="header__inner">
+                <!-- Tablet/Mobile menu -->
+                <label for="menu-checkbox" class="toggle-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path fill="currentColor"
+                            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                    </svg>
+                </label>
+
                 <!-- Logo -->
                 <a href="./index.html"><img src="./assets/img/logo.svg" alt="" class="logo"></a>
 
                 <!-- Nav -->
                 <nav class="navbar">
-                    <ul class="navbar__list">
+                    <ul id="pc-nav" class="navbar__list">
                         <li class="navbar__item">
                             <a href="#" class="navbar__link navbar__link--active " data-text="Home">Home</a>
                         </li>
@@ -64,6 +75,12 @@
                         <li class="navbar__item">
                             <a href="#blog" class="navbar__link " data-text="Blog">Blog</a>
                         </li>
+                        <li class="navbar__item show-on-mobile separate">
+                            <a href="./login.html" class="navbar__link " data-text="Blog">Log in</a>
+                        </li>
+                        <li class="navbar__item show-on-mobile">
+                            <a href="./signup.html" class="navbar__link " data-text="Blog">Sign up</a>
+                        </li>
                     </ul>
                 </nav>
 
@@ -72,7 +89,41 @@
                     <a href="./login.html" class="header-action__link">Log in</a>
                     <a href="./signup.html" class="header-action__btn btn">Sign up</a>
                 </div>
+
+                <!-- Notification mobile -->
+                <label for="notification" class="bell-wrap">
+                    <svg class="bell" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path
+                            d="M224 0c-17.7 0-32 14.3-32 32V51.2C119 66 64 130.6 64 208v25.4c0 45.4-15.5 89.5-43.8 124.9L5.3 377c-5.8 7.2-6.9 17.1-2.9 25.4S14.8 416 24 416H424c9.2 0 17.6-5.3 21.6-13.6s2.9-18.2-2.9-25.4l-14.9-18.6C399.5 322.9 384 278.8 384 233.4V208c0-77.4-55-142-128-156.8V32c0-17.7-14.3-32-32-32zm0 96c61.9 0 112 50.1 112 112v25.4c0 47.9 13.9 94.6 39.7 134.6H72.3C98.1 328 112 281.3 112 233.4V208c0-61.9 50.1-112 112-112zm64 352H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7s18.7-28.3 18.7-45.3z" />
+                    </svg>
+                </label>
             </div>
+        </div>
+    </header>
+
+    <!-- Tablet/mobile header -->
+    <header class="mobile-header">
+        <input type="checkbox" name="" id="menu-checkbox" class="menu-checkbox" hidden>
+
+        <!-- Overlay -->
+        <label for="menu-checkbox" class="menu-overlay"></label>
+
+        <!-- Menu content -->
+        <div class="menu-drawer">
+            <div class="menu-wrap">
+                <!-- Logo -->
+                <a href="./index.html"><img src="./assets/img/logo.svg" alt=""></a>
+
+                <label for="menu-checkbox" class="x-mark">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                        <path
+                            d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                    </svg>
+                </label>
+            </div>
+
+            <!-- Nav -->
+            <ul id="mobile-nav"></ul>
         </div>
     </header>
 
@@ -417,7 +468,7 @@
                     <div class="blog-info">
                         <p class="section-label">Our Blog</p>
                         <h2 class="blog__heading section-heading">Get The Updates</h2>
-                        <p class="section-desc-2">
+                        <p class="blog-info__desc section-desc-2">
                             Read our blog for the regular updates about us and about our online
                             banking services that may inspire you
                         </p>
@@ -436,7 +487,10 @@
                         <div class="blog-item__info">
                             <p class="blog__date">July 03, 2022</p>
                             <a href="#!">
-                                <p class="blog_desc">Online bank is the best and secure way to save in the future...</p>
+                                <p class="blog_desc line-clamp line-3">
+                                    Online bank is the best and secure way to save in the
+                                    future
+                                </p>
                             </a>
                             <a href="#!" class="blog__cta">Read Blog</a>
                         </div>
@@ -451,7 +505,8 @@
                         <div class="blog-item__info">
                             <p class="blog__date">July 03, 2022</p>
                             <a href="#!">
-                                <p class="blog_desc">Why do you need to open a bank account in online..</p>
+                                <p class="blog_desc line-clamp line-3">Why do you need to open a bank account in online
+                                </p>
                             </a>
                             <a href="#!" class="blog__cta">Read Blog</a>
                         </div>
@@ -466,7 +521,9 @@
                         <div class="blog-item__info">
                             <p class="blog__date">July 03, 2022</p>
                             <a href="#!">
-                                <p class="blog_desc">The benefits that we get from credit card at anytime...</p>
+                                <p class="blog_desc line-clamp line-3 line-3">
+                                    The benefits that we get from credit card at anytime
+                                </p>
                             </a>
                             <a href="#!" class="blog__cta">Read Blog</a>
                         </div>
@@ -481,7 +538,9 @@
                         <div class="blog-item__info">
                             <p class="blog__date">July 03, 2022</p>
                             <a href="#!">
-                                <p class="blog_desc">How to manage your money in online in this busy days...</p>
+                                <p class="blog_desc line-clamp line-3">
+                                    How to manage your money in online in this busy days
+                                </p>
                             </a>
                             <a href="#!" class="blog__cta">Read Blog</a>
                         </div>
@@ -501,8 +560,8 @@
                         and move faster
                     </p>
                     <div class="app__download">
-                        <a href="#!"><img src="./assets/img/appstore.svg" alt=""></a>
-                        <a href="#!"><img src="./assets/img/ggplay.svg" alt=""></a>
+                        <a href="#!"><img src="./assets/img/appstore.svg" class="app__download-img" alt=""></a>
+                        <a href="#!"><img src="./assets/img/ggplay.svg" class="app__download-img" alt=""></a>
                     </div>
                     <img src="./assets/img/star.svg" data-aos="flip-left" data-aos-easing="ease-out-cubic"
                         data-aos-duration="2000" data-aos-offset="200" alt="" class="app-decor">

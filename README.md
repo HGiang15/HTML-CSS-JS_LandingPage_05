@@ -2,4 +2,4 @@
 
 ## 🚀 Live Demo
 
-Experience the live demo [here](https://github.com/HGiang15/HTML-CSS-JS_LandingPage_05.git).
+Experience the live demo [here](https://hgiang15.github.io/HTML-CSS-JS_LandingPage_05/).
