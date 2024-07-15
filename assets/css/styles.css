@@ -822,17 +822,34 @@ button {
     border-radius: 100%;
 }
 
-.feedback-item:nth-child(odd) .feedback__user-avatar {
+.feedback-item:nth-child(1) .feedback__user-avatar {
     background: #4AB5E3;
 }
 
-.feedback-item:nth-child(even) .feedback__user-avatar {
+.feedback-item:nth-child(2) .feedback__user-avatar {
     background: #439F90;
+}
+
+.feedback-item:nth-child(3) .feedback__user-avatar {
+    background: #e5ef59;
+}
+
+.feedback-item:nth-child(4) .feedback__user-avatar {
+    background: #f5a95d;
+}
+
+.feedback-item:nth-child(5) .feedback__user-avatar {
+    background: #f763ea;
+}
+
+.feedback-item:nth-child(6) .feedback__user-avatar {
+    background: #ace7dd;
 }
 
 .feedback-avatar {
     display: block;
     width: 100%;
+    height: 104px;
     object-fit: cover;
     border-radius: inherit;
 }
