@@ -17,12 +17,7 @@ html {
 body {
     font-size: 1.6rem;
     font-family: "Open Sans", sans-serif;
-    background: var(--background-color);
-}
-
-html,
-body {
-    scroll-behavior: smooth;
+    /* background: var(--background-color); */
 }
 
 /* Common */
